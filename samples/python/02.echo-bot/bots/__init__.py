@@ -2,5 +2,7 @@
 # Licensed under the MIT License.
 
 from .echo_bot import EchoBot
+from .echo_bot_string_reversed import EchoBotReverseString
 
-__all__ = ["EchoBot"]
+__all__ = ["EchoBot", "EchoBotReverseString"]
+#__all__ = ["EchoBot"]
