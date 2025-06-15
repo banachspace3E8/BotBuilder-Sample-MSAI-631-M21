@@ -16,7 +16,8 @@ from botbuilder.integration.aiohttp import CloudAdapter, ConfigurationBotFramewo
 from botbuilder.schema import Activity, ActivityTypes
 
 from bots import EchoBot
-from bots import EchoBotReverseString
+#from bots import EchoBotReverseString
+from bots import EchoBotSentimentAnalysis
 from config import DefaultConfig
 
 CONFIG = DefaultConfig()
@@ -58,7 +59,8 @@ ADAPTER.on_turn_error = on_error
 
 # Create the Bot
 #BOT = EchoBot()
-BOT = EchoBotReverseString()
+#BOT = EchoBotReverseString()
+BOT = EchoBotSentimentAnalysis()
 
 
 # Listen for incoming requests on /api/messages
